@@ -41,4 +41,6 @@ search = (roll) => {
     }
     return false;
 }
-console.log(search(2700177));
+const input = 9905535;
+output = search(input);
+console.log(output);
