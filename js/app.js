@@ -54,7 +54,8 @@ showResult = (firstName, lastName, roll, college) => {
                     src="https://cdn.pixabay.com/photo/2016/04/01/09/51/boy-1299626_960_720.png" alt=""
                     srcset="">
             </div>
-            <a onclick="handelViewBtn()" class="btn btn-danger m-2" id="btn" type="submit">View Merit Position & Marks</a>
+            <a onclick="handelViewBtn()" class="btn btn-success m-2" id="btn" type="submit">View Merit Position & Marks</a>
+            <a onclick="handelDownloadBtn()" class="btn btn-danger m-2" id="btn" type="submit">PDF Merit List</a>
         </div>
     `;
     }
