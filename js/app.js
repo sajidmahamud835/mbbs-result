@@ -42,14 +42,16 @@ search = (roll) => {
     return false;
 }
 
+searchHandeler = (firstName, lastName, roll) => {
+    roll = parseInt(roll);
+    result = search(roll);
+    console.log(result);
+}
+
 handelSearchBtn = () => {
-    console.log('searching...')
     const firstName = document.getElementById("fname").value;
     const lastName = document.getElementById("lname").value;
     const roll = document.getElementById("roll").value;
-    console.log(firstName, lastName, roll)
-    return;
+    searchHandeler(firstName, lastName, roll)
+    return console.log('searching...');
 }
-const input = 9905535;
-output = search(input);
-console.log(output);
