@@ -42,16 +42,34 @@ search = (roll) => {
     return false;
 }
 
+showResult = (firstName, lastName, roll, college) => {
+    console.log(firstName, lastName, roll, college)
+    document.getElementById("result").innerHTML = `
+        <div>
+            <h1 class="text-center text-primary">Congratulation ${firstName + " " + lastName}!</h1>
+            <p class="text-center"> You got selected for <span class="text-info"> ${college} </span>.</p>
+            <div class="d-flex">
+            <img width="400px" height="320px" class="w-50 mx-auto my-3"
+                src="https://cdn.pixabay.com/photo/2016/04/01/09/51/boy-1299626_960_720.png" alt=""
+                srcset="">
+        </div>
+        </div>
+    `
+}
+
 searchHandeler = (firstName, lastName, roll) => {
     roll = parseInt(roll);
     result = search(roll);
-    console.log(result);
+    document.getElementById("default").style.display = "none";
+    showResult(firstName, lastName, roll, result);
+
 }
 
 handelSearchBtn = () => {
+    console.log('searching...')
     const firstName = document.getElementById("fname").value;
     const lastName = document.getElementById("lname").value;
     const roll = document.getElementById("roll").value;
     searchHandeler(firstName, lastName, roll)
-    return console.log('searching...');
+    return console.log('finished');
 }
