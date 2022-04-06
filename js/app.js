@@ -1,4 +1,4 @@
-const result = [
+const results = [
     {
         college: "Abdul Malek Ukil Medical College, Noakhali",
         roll: [
@@ -28,6 +28,17 @@ const result = [
     }
 ]
 
-function search(params) {
+search = (roll) => {
+    const found = results.map(result =>
+        result.roll.find(res => res === roll)
+    );
+    for (let i = 0; i < found.length; i++) {
+        const element = found[i];
+        if (element != undefined) {
+            return results[i].college;
+        }
 
+    }
+    return false;
 }
+console.log(search(2700177));
