@@ -37,10 +37,6 @@
                                 PDF</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Roll Number" aria-label="Search">
-                        <button class="btn btn-danger" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -52,9 +48,11 @@
         <section class="container">
             <!-- search box start -->
             <form class="d-md-flex">
-                <input class="form-control m-2 w-sm-50" type="name" placeholder="First Name" aria-label="Name">
-                <input class="form-control m-2 w-sm-50" type="name" placeholder="Last Name" aria-label="Name">
-                <input class="form-control m-2 w-sm-50" type="search" placeholder="Roll Number"
+                <input class="form-control m-2 w-sm-50" id="fname" type="name" placeholder="First Name"
+                    aria-label="Name">
+                <input class="form-control m-2 w-sm-50" id="lname" type="name" placeholder="Last Name"
+                    aria-label="Name">
+                <input class="form-control m-2 w-sm-50" type="search" id="searchbtn" placeholder="Roll Number"
                     aria-label="Roll Number">
                 <button class="btn btn-danger m-2" type="submit">Search</button>
             </form>
