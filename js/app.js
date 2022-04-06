@@ -41,6 +41,15 @@ search = (roll) => {
     }
     return false;
 }
+
+handelSearchBtn = () => {
+    console.log('searching...')
+    const firstName = document.getElementById("fname").value;
+    const lastName = document.getElementById("lname").value;
+    const roll = document.getElementById("roll").value;
+    console.log(firstName, lastName, roll)
+    return;
+}
 const input = 9905535;
 output = search(input);
 console.log(output);
